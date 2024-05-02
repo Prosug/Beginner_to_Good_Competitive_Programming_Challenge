@@ -1,5 +1,7 @@
 # Binaries for programs and plugins
 prueba.cpp
+lectura.txt
+salida.txt
 *.exe
 *.txt
 *.exe~
