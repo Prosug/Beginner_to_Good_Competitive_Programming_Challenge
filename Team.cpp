@@ -8,7 +8,7 @@ using namespace std;
     
     I'm learning competitive programming 
     
-    long long day=20;
+    long long day=21;
 
     date dayCodeAnt=localdate()-1;
     date dayCode=localdate();
@@ -24,10 +24,10 @@ using namespace std;
     cout<<"Day: "<<day<<"\n";
 
     ***********************
-    Day: 21 
+    Day: 22
     ***********************
 
-    DIV  LIVE......
+  
 */
 
 
@@ -38,23 +38,22 @@ int main(int argc, char const *argv[])
     freopen("lectura.txt", "r", stdin);
     freopen("salida.txt", "w", stdout);
   #endif
-  int casos;cin>>casos;
-  while(casos--){
-    int t1,t2;cin>>t1>>t2;
-    string a,b;cin>>a>>b;
-    int ca,cb; ca=cb=0; int k=0;
-    while(ca<a.size() && cb<b.size()  ){
-      if(a[ca]==b[cb]){
-        k++;
-        cb++;ca++;
-      }else{
-        cb++;
+  int n;cin>>n;
+  int res=0;
+  while(n--){
+    int con=0;
+    for (int i = 0; i < 3; ++i)
+    {
+      int val;cin>>val;
+      if(val){
+        con++;
       }
     }
-    cout<<k<<"\n";
+    if(con>=2){
+      res++;
+    }
   }
-  
-
+  cout<<res<<"\n";
 
   return 0;
 }
