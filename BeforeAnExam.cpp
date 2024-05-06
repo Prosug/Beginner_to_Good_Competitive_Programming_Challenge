@@ -72,16 +72,13 @@ int main(int argc, char const *argv[])
 	}
 	if(ok){
 		cout<<"YES\n";
-		
 		for (int i = 0; i < respuesta.size(); ++i)
 		{
-		
 			if(i==respuesta.size()-1){
 				cout<<respuesta[i]<<"\n";
 			}else{
 				cout<<respuesta[i]<<" ";
 			}
-			
 		}
 	
 	}else{
